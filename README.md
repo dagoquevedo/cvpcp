@@ -108,7 +108,7 @@ Where,
 
 ### Output
 
-The execution generate a output in a single line with the following information:
+The execution generate a output in a single line with relevant information:
 
 `$ [set] [instance] [n] [p] [best_lb] [incumbent] [gap] [time] [memory] [feasible]`
 
@@ -138,16 +138,6 @@ Format output
 Other lines     : k-center node | nodes assigned to k-center node
 ----------------------------------------
 ```
-
-### Example
-
-Execution:
-
-`$ ./CVPCP instance.dat 1000 0.4 3`
-
-Output:
-
-`$ 4 1 50 5 29.00 29.00 0.00 0.3580 917504 1`
 
 ## Citation
 
