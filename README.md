@@ -98,11 +98,13 @@ For execute the heuristic method, run the following:
 
 Where,
 
-* `{instance}`: file path of an instance with a valid format, defined [here](/README.md#Dataset-format)
-* `{r_max}`: maximum number of iterations
-* `{alpha}`: in a perturbation function, represent the percent of nodes to be disconnected from a solution
-* `{q}`: in a shake function, generated the <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />.
-
+|  Parameter |                                          Description                                          |
+|----------|---------------------------------------------------------------------------------------------|
+| `{instance}` | File path of an instance with a valid format, defined here                                    |
+| `{r_max}`    | Maximum number of iterations                                                                  |
+| `{alpha}`    | In a perturbation function, represent the percent of nodes to be disconnected from a solution |
+| `{e}`        | in a shake function, generated the <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />         |
+| `{output}`    | Optional. It is the output file path where the solution will be saved|
 
 ### Output
 
@@ -112,16 +114,30 @@ The execution generate a output in a single line with the following information:
 
 Where,
 
-* `[set]`: number of the set
-* `[instance]`: is the identificator of instance
-* `[n]`: number of nodes
-* `[p]`: number of centers
-* `[best_lb]`: best known lower bound
-* `[incumbent]`: best value found by the heuristic
-* `[gap]`: percent of relative deviation or gap with respect to the best known lower bound
-* `[time]`: execution time in seconds
-* `[memory]`: maximum memory used
-* `[feasible]`: 1 if a feasible solution, 0 in other case
+|  Output  |                                Description                               |
+|-----------|------------------------------------------------------------------------|
+| `[set]`       | Set number                                                               |
+| `[instance]`  | Instance number                                                          |
+| `[n]`         | Number of nodes                                                          |
+| `[p]`         | Number of centers                                                        |
+| `[best_lb]`   | Best known lower bound                                                   |
+| `[incumbent]` | Best value found by the heuristic                                        |
+| `[gap]`       | Percent of relative deviation with respect to the best known lower bound |
+| `[time]`      | Execution time in seconds                                                |
+| `[memory]`    | Maximum memory used                                                      |
+| `[feasible]`  | 1 if a feasible solution, 0 in other case                                |
+
+### Output file
+
+If a path output file was especificated, the application will generate a file with the following format
+
+```
+Format output
+----------------------------------------
+1st line        : set instance n p
+Other lines     : k-center node | nodes assigned to k-center node
+----------------------------------------
+```
 
 ### Example
 
