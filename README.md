@@ -99,8 +99,8 @@ Where,
 | `{instance}` | File path of an instance with a valid format, defined here                                    |
 | `{r_max}`    | Maximum number of iterations                                                                  |
 | `{alpha}`    | Percent of nodes to be disconnected from a solution |
-| `{e}`        | Generated <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />         |
-| `{output}`    | Optional. The file path where the solution will be saved|
+| `{e}`        | Generate <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />         |
+| `{output}`    | Optional. The file path where write the solution|
 
 ### Output information
 
