@@ -71,7 +71,6 @@ Other lines     : x y capacities demands
 ```
 Here `set = 3, 8`. The computational implementation used euclidean distances calculated from these coordinates but rounded to the nearest integer.
 
-
 ### Format D
 
 Set proposed in [Ceselli and Righini, 2005](https://doi.org/10.1002/net.20059). This set instances is available [here](Datasets/OR-Library/) and the format is:
@@ -97,7 +96,7 @@ Where,
 
 |  Parameter |                                          Description                                          |
 |----------|---------------------------------------------------------------------------------------------|
-| `{instance}` | File path of an instance with a valid format, defined here                                    |
+| `{instance}` | Instance file path with a valid format, defined here                                    |
 | `{r_max}`    | Maximum number of iterations                                                                  |
 | `{alpha}`    | Percent of nodes to be disconnected from a solution |
 | `{e}`        | Generate <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />         |
@@ -105,7 +104,7 @@ Where,
 
 ### Output information
 
-The execution report a output in with the following relevant information:
+The execution report a output with the following relevant information:
 
 `$ [set] [instance] [n] [p] [best_lb] [incumbent] [gap] [time] [memory] [feasible]`
 
