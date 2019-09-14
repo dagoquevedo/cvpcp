@@ -22,7 +22,6 @@ $ cd ~/git
 $ git clone https://github.com/dagoquevedo/cvpcp
 $ make
 ```
-
 The `make` instruction will compile the code generating an executable with a name `CVPCP`.
 
 ## Dataset format
@@ -69,7 +68,6 @@ Format C: Lorena and Senne
 Other lines     : x y capacities demands
 ----------------------------------------
 ```
-
 Here `set = 3, 8`. The computational implementation used euclidean distances calculated from these coordinates but rounded to the nearest integer.
 
 
@@ -86,9 +84,7 @@ Other lines	: Demands for each node
 Other lines	: Capacities for each node 
 ----------------------------------------
 ```
-
 Here `set = 4, 5, 6, 7`.
-
 
 ## Execution
 
@@ -106,9 +102,9 @@ Where,
 | `{e}`        | in a shake function, generated the <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />         |
 | `{output}`    | Optional. The file path where the solution will be saved|
 
-### Output
+### Output information
 
-The execution generate a output in a single line with relevant information:
+The execution report a output in with the following relevant information:
 
 `$ [set] [instance] [n] [p] [best_lb] [incumbent] [gap] [time] [memory] [feasible]`
 
@@ -127,7 +123,7 @@ Where,
 | `[memory]`    | Maximum memory used                                                      |
 | `[feasible]`  | 1 if a feasible solution, 0 in other case                                |
 
-### Output file
+### Output solution
 
 If a path output file was especificated in `{output}` parameter, the application will generate a file with the following format
 
