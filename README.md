@@ -5,7 +5,7 @@ neighborhood descent"](https://doi.org/10.1016/j.cor.2014.12.013), you can find 
 
 ## Prerequisites
 
-This implementation was developed in C++ and run under a OS like Linux or Unix, you must verify that you have install the following tools:
+This implementation was developed in C++ and run under a Unix-like OS. You must verify that you have install the following tools:
 
 * GNU C++
 * Make
