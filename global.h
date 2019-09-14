@@ -295,12 +295,14 @@ void save(const char * path_out, solution result)
     
     result_file.open (path_out);
     
+    result_file << type << " " << id << " " << n <<" " <<p<<"\n";
+    
     for (k = 0; k < p; ++k) {
         result_file << result.P[k];
-        result_file << "|";
+        result_file << " |";
         for (j = result.X[k].begin(); j != result.X[k].end(); ++j) {
-            result_file << *j;
             result_file << " ";
+            result_file << *j;
         }
         result_file << "\n";
     }
