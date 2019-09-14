@@ -20,6 +20,7 @@ Use git to download the latest version of the package to your home `git` folder 
 ```
 $ cd ~/git
 $ git clone https://github.com/dagoquevedo/cvpcp
+$ cd cvpcp
 $ make
 ```
 The `make` instruction will compile the code generating an executable with a name `CVPCP`.
