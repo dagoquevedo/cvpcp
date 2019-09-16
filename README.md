@@ -90,13 +90,13 @@ Here `set = 4, 5, 6, 7`.
 
 For execute the heuristic method, run the following:
 
-`$ ./CVPCP {instance} {r_max} {alpha} {q}`
+`$ ./CVPCP {file} {r_max} {alpha} {q}`
 
 Where,
 
 |  Parameter |                                          Description                                          |
 |----------|---------------------------------------------------------------------------------------------|
-| `{instance}` | Instance file path with a valid format, defined here                                    |
+| `{file}` | Instance file path with a valid format, defined here                                    |
 | `{r_max}`    | Maximum number of iterations                                                                  |
 | `{alpha}`    | Percent of nodes to be disconnected from a solution |
 | `{q}`        | Generate <img src="https://latex.codecogs.com/gif.latex?q" /> subsets nearest centers to <img src="https://latex.codecogs.com/gif.latex?i" />, we recommend a value <img src="https://latex.codecogs.com/gif.latex?q=\lceil\ln(p)\rceil+1" />         |
