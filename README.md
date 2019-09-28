@@ -90,7 +90,7 @@ Here `set = 4, 5, 6, 7`.
 
 For execute the heuristic method, run the following:
 
-`$ ./CVPCP {file} {r_max} {alpha} {q}`
+`$ ./CVPCP {file} {r_max} {alpha} {q} {output}`
 
 Where,
 
