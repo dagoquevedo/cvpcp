@@ -137,8 +137,7 @@ Other lines     : k-center node | nodes assigned to k-center node
 
 ## Citation
 
-D. R. Quevedo-Orozco and R. Z. Ríos-Mercado, Improving the quality of heuristic solutions for the capacitated vertex <em>p</em>-center problem through iterated greedy local search and variable neighborhood descent, <em>Computers and Operations Research</em>, 62 (2015), 133-144. 
-[![DOI](https://doi.org/10.1016/j.cor.2014.12.013)](https://doi.org/10.1016/j.cor.2014.12.013)
+D. R. Quevedo-Orozco and R. Z. Ríos-Mercado, Improving the quality of heuristic solutions for the capacitated vertex <em>p</em>-center problem through iterated greedy local search and variable neighborhood descent, <em>Computers and Operations Research</em>, 62 (2015), 133-144. [doi.org/10.1016/j.cor.2014.12.013](https://doi.org/10.1016/j.cor.2014.12.013)
 
 ## Contact
 
